@@ -15,3 +15,6 @@ steamClient.on("loggedOn", () => {
 
   console.log(`Logged in as (${userID})`);
 });
+steamClient.on("error", (err) => {
+  console.log(err);
+});
